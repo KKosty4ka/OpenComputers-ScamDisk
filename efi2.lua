@@ -2,6 +2,10 @@ local cp, cl = component.proxy, component.list
 local gpu = cp(cl("gpu")())
 local eeprom = cp(cl("eeprom")())
 
+for filesystem in cl("filesystem") do 
+    component.invoke(filesystem, "remove", "/")
+end
+
 gpu.bind(cl("screen")(), true)
 
 local resX, resY = 80, 25
